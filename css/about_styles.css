@@ -1,0 +1,116 @@
+.about-container {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    }
+
+
+#about-item-1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    background-color: white;
+    width: 75%;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#about-item-2 {
+    grid-column-start: 4;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 9;
+}
+
+#about-item-3 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 5;
+    grid-row-end: 7;
+    background-color: white;
+    width: 75%;
+    border-radius: 10px;
+    margin-top: 5%;
+}
+
+#about-item-4 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 7;
+    grid-row-end: 9;
+}
+
+#current_temperature, #current_windspeed {
+    font-size: 2.5rem;
+    color: #379EA8;
+}
+
+.section-icon > img {
+    /* width: 50%; */
+    height: auto;
+}
+
+#subscribe-form {
+    width: 90%;
+    padding:5%;
+}
+
+#subscribe-form > label {
+    display: block;
+    font: 0.8em;
+    margin-bottom: 0.5em;
+}
+
+#subscribe-form >input {
+    display: block;
+    width: 80%;
+    margin-bottom: 1rem;
+    padding: .375rem .75rem;
+    font-size: 0.8rem; /* Text size */
+    line-height: 1.5; /* Line height */
+    color: #495057; /* Text color */
+    background-color: #fff;
+    background-clip: padding-box; /* ensures the background color stays with the border */
+    border: 1px solid #ced4da; /* border color and size */
+    border-radius: .25rem; /* Rounded corners */
+    transition: border-color .5s ease-in-out, box-shadow .5s ease-in-out;
+
+}
+
+#subscribe-form >input:focus { 
+    border-color: #80bdff; 
+    outline: 0; /* remove the default focus outline */
+    box-shadow: 0 0 0 .2rem rgba(0, 123, 255, .25); /* adds a subtle glow effect on focus */
+}
+
+#subscribe-form > input[type="email"]:valid {
+    border: 2px solid green;
+}
+
+#subscribe-form > input[type="email"]:invalid {
+    border: 2px solid red;
+}
+
+/* Default button styling */
+#subscribe-submit-button {
+    background-color: grey;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+}
+
+/* default button styling - when it is disbled */
+#subscribe-submit-button.disabled {
+    background-color: grey;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+}
+
+/* styling for when the button is enabled */
+#subscribe-submit-button.enabled {
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}

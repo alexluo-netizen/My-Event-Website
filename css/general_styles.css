@@ -1,0 +1,77 @@
+
+html,body{
+    background-color: antiquewhite;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;;
+}
+
+h1{
+    color: #379EA8;
+    font-weight: 300;
+}
+
+/* h2{
+    color: blue;
+}
+p{
+    color: black;
+} */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto 1fr;
+    }
+
+.brand {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+    background-color: #379EA8; /* new line – just copy and paste this line */;
+    padding: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    }
+        
+    .page-links {
+    grid-column: 3 / span 2;
+    grid-row: 1;
+    text-align: right;
+    background-color: #379EA8; /* new line – just copy and paste this line */
+    padding: 10px;
+    }
+
+.main {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    width: 75vw;
+    margin: 0 auto;
+    }
+    
+.menu-button {
+    font-size: 20px;
+    color: white;
+    background-color: #379EA8;
+    padding: 2px 20px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: white;
+    }
+
+
+.home_splash {
+    width: 60%;
+    height: 40vh;
+    object-fit: cover;
+}
+
+figcaption {
+    color: grey;
+    font-weight: 100;
+}

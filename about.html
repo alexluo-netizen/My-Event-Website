@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Add the title of your page here</title>
+        <link rel="stylesheet" href="css/general_styles.css">
+        <link rel="stylesheet" href="css/about_styles.css">
+    </head>
+    <body>
+        <div class="grid-container">
+            <div class="brand">Food festival</div>
+            <div class="page-links">
+                <a href="index.html"><button class="menu-button">Home</button></a>
+                <a href="gallery.html"><button class="menu-button">Gallery</button></a>
+                <a href="about.html"><button class="menu-button">About</button></a>
+            </div>
+            <div class="main">
+                <h1>This is about the food festival!</h1>
+                <p>testing</p>
+            </div>
+        </div>
+        <div class="about-container">
+            <div id="about-item-1">
+                <figure class="section-icon">
+                    <img src="images/icons8-partly-cloudy-day-96.png" alt="Weather icon with sun and clouds">
+                </figure>
+                <h4>Current Weather</h4>
+                <p>Temperature</p>
+                <p id="current_temperature">??</p>
+                <p>Wind Speed</p>
+                <p id="current_windspeed">??</p>
+            </div>
+            <div id="about-item-2">
+                <h3>Organized by Family, Friends & Community</h3>
+                <p>The Bayside Heights Residences International food event is more than a normal event.</p>
+                <h3>Who we are</h3>
+                <p>We are a passinate non-for-profit group of volunteers who want to spread food culture.</p>
+                <h3>Our mission</h3>
+                <p>Our mission is to make this event smoothly being hosted.</p>
+            </div>
+            <div id="about-item-3">
+                <form id="subscribe-form">
+                    <h5>Subscribe to our newsletters!</h5>
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required>
+
+                    <label for="suburb">Suburb:</label>
+                    <input type="text" id="suburb" name="suburb" placeholder="Enter you suburb" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+                    <input type="submit" value="Subscribe" id="subscribe-submit-button" disabled >
+                </form>
+
+                <div id="responseMessage"></div>
+            </div>
+            <div id="about-item-4">
+                
+            </div>
+        </div>
+        <link rel="stylesheet" href="css/about_styles.css">
+        <script src="js/about_api.js"></script>
+    </body>
+</html>
