@@ -10,8 +10,8 @@ The navigation bar button on top of each page links to different pages.
 
 ![Homepage](images/screenshot1.png)
 
-![Weather API](images/scrennshot2.png)
+![Weather API](images/screenshot2.png)
 
 The subscribption form will show success or error messages based on input data.
 
-![Subscription form](images/scrennshot3.png)
+![Subscription form](images/screenshot3.png)
